@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    position: relative; 
+
+    padding: 20px;
+
+}
+
+h1 {
+   padding-top: 50px;
+   color: aliceblue;
+    
+}
+.set {
+    padding: 10px; 
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.100);
+    border-radius: 10px;
+    width: 580px;
+    height: 100px;
+}
+.set label {
+    padding: 10px;
+}
+.set input {
+    margin: 10px;
+}
+.add {
+    padding: 10px;
+    padding-bottom: 100px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.100);
+    border-radius: 10px;
+    width: 580px;
+    height: 300px;
+}
+.add label {
+    padding: 20px;
+    
+}
+.add input {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+}
+
+
+button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #fff;
+}
+
+button:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
