@@ -3,3 +3,5 @@ flask_sqlalchemy==3.0.4
 pandas==2.1.1
 matplotlib==3.8.1
 numpy==1.26.1
+
+gunicorn
